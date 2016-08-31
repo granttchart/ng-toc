@@ -1,0 +1,19 @@
+{
+  "name": "ng-toc",
+  "version": "1.0.0",
+  "description": "Automatic table of contents, AngularJS style ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/granttchart/ng-toc.git"
+  },
+  "author": "grantdotlocal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/granttchart/ng-toc/issues"
+  },
+  "homepage": "https://github.com/granttchart/ng-toc#readme"
+}

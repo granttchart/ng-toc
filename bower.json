@@ -1,0 +1,17 @@
+{
+  "name": "ng-toc",
+  "description": "Automatic table of contents, AngularJS style",
+  "main": "index.js",
+  "authors": [
+    "grantdotlocal"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/granttchart/ng-toc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,15 @@
+bower_components/
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+.grunt
+.lock-wscript
+dist
+node_modules
+jspm_packages
+.npm
+.node_repl_history
