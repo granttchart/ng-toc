@@ -6,31 +6,57 @@
         <title>ng-toc</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
 
-      <main ng-app="ng-toc-demo" ng-cloak>
-        <aside ng-toc-list>
-        </aside>
-        <section ng-toc-target="h1, h2">
-          <h1>A Level-One Heading</h1>
-          <p>Irure do nisi aliqua ullamco voluptate occaecat reprehenderit reprehenderit deserunt consectetur adipisicing sint eiusmod irure. Sit velit ullamco ullamco Lorem voluptate reprehenderit Lorem voluptate aliqua. Occaecat dolor aliqua ut commodo dolore proident proident ut non nisi et. Laboris quis ipsum consequat qui incididunt pariatur deserunt id nulla culpa proident id sit.</p>
+      <main ng-app="ng-toc-demo" ng-cloak class="container">
+             <aside class="col-md-4">
+               <div class="toc">
+                 <h4 class="toc-heading">Contents</h4>
+                 <ng-toc-list/>
+               </div>
+             </aside>
+             <section class="content col-md-8" ng-toc-target="h1, h2">
+               <h1>TOC, the Angular way</h1>
+               <p>ng-toc generates a dynamic table of contents for online documentation, articles, blogs, and more.</p>
+               <p>It's a snap to add it to your project:</p>
+               <ol>
+                 <li>Inject the <code>ngToc</code> module into your Angular app.</li>
+                 <li>Add the <code>ng-toc</code> attribute to your content area.</li>
+                 <li>Add <code>ng-toc-list</code> to the element that should contain the TOC.</li>
+               </ol>
 
-          <h2>A Level-Two Heading</h2>
-          <p>Nostrud officia aliquip ut consectetur exercitation minim nostrud do id sit aute. Do labore adipisicing consequat id tempor ipsum mollit nulla ipsum occaecat aliquip ad. Deserunt culpa anim nisi Lorem et duis esse ex officia et non cupidatat minim veniam elit eiusmod nulla. In aliqua nisi voluptate aliquip cillum exercitation sunt non voluptate ea. Duis aute consectetur non ullamco duis non ex aliquip exercitation magna culpa proident cillum qui laborum.</p>
+               <div class="text-center">
+                 <i class="fa fa-book" aria-hidden="true"></i>
+               </div>
 
-          <h3>A Level-Three Heading</h3>
-          <p>Eu laborum exercitation minim cupidatat pariatur Lorem cillum ea. Ut do qui aute eu culpa commodo id amet aliqua commodo magna aliqua eu. Sunt duis esse dolor culpa nisi eiusmod laborum reprehenderit quis ex magna sint exercitation occaecat cillum velit in. Anim consequat irure cillum esse enim cillum aliqua. Ad ut aute ullamco sunt dolore tempor exercitation ut pariatur sint aliquip anim minim ex excepteur. Voluptate quis aliquip consectetur ullamco aute do eiusmod enim. Irure sunt do dolore excepteur reprehenderit nulla ad nostrud officia ullamco enim do sit ut nostrud.</p>
+               <h2>Save your energy!</h2>
+               <p>Focus on content, not manually building document navigation.</p>
+               <p>ng-toc collects heading elements specified in the <code>ng-toc</code> attribute &mdash; e.g.: <code>ng-toc="h1, h2"</code> &mdash; or defaults to H1, H2, and H3 elements if no attribute is given.</p>
 
-          <h1>A Level-One Heading</h1>
-          <p>Ea reprehenderit culpa ea deserunt veniam eu proident nisi aliquip. Ex duis do irure laborum nisi nulla quis amet cillum labore. Duis occaecat labore consectetur do sunt esse cupidatat. Sunt aute enim incididunt minim labore ad deserunt exercitation officia proident. Excepteur adipisicing elit velit nostrud id mollit laborum voluptate tempor. Do amet ut deserunt esse exercitation tempor excepteur cillum et ullamco dolore elit amet officia labore eiusmod. In elit qui adipisicing irure magna aute sint. Exercitation incididunt sint enim eu enim ea sit quis ad sit.</p>
+               <div class="text-center">
+                 <i class="fa fa-battery-full" aria-hidden="true"></i>
+               </div>
 
-          <h2>A Level-Two Heading</h2>
-          <p>Ex nostrud proident ut in pariatur consequat amet mollit. Consectetur non enim esse reprehenderit ipsum consequat Lorem. Proident commodo magna elit tempor officia deserunt ex qui laboris cupidatat magna id ut adipisicing nostrud reprehenderit dolore. Veniam mollit aliqua irure ullamco pariatur irure minim sint non aliqua reprehenderit.</p>
-        </section>
+               <h2>Go right there</h2>
+               <p>The ng-toc-list directive provides an unordered list of direct links to each heading.</p>
+
+               <div class="text-center">
+                 <i class="fa fa-bus" aria-hidden="true"></i>
+               </div>
+
+               <h2>Style away</h2>
+               <p>The <code>ng-toc-list</code> template provides a barebones presentation of the data. It's easy to style it any way you like.</p>
+
+                <div class="text-center">
+                 <i class="fa fa-smile-o" aria-hidden="true"></i>
+               </div>
+             </section>
+           </main>
       </main>
-
-
     </body>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="dist/all.min.js"></script>
