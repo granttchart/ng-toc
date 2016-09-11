@@ -1,6 +1,4 @@
-angular.module('ng-toc-demo', [], function() {
-
-})
+angular.module('ngToc', [])
 
 .directive('ngTocTarget', function() {
   return {
@@ -50,13 +48,13 @@ angular.module('ng-toc-demo', [], function() {
 
 .directive('ngTocList', function() {
   return {
-    templateUrl: 'views/ngtoclist.html',
+    templateUrl: '../views/ngtoclist.html',
     link: function(scope, elem, attrs) {
       scope.scrollTo = function(loc, e) {
         e.preventDefault();
         var el = document.getElementById(loc.item.id);
         window.scroll(0, el.offsetTop);
-      }
+      };
     }
   };
 });
